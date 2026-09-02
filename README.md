@@ -29,6 +29,7 @@ ZOE/
 ├── index.html       # Página principal (Home)
 ├── artigos.html     # Página dedicada de artigos e guias técnicos
 ├── logo.jpg         # Logotipo da marca
+├── images/          # Galeria de fotos reais dos projetos executados
 ├── .gitignore       # Arquivos ignorados no versionamento
 └── README.md        # Documentação
 ```
