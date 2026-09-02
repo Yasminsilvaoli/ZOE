@@ -26,7 +26,8 @@ Projeto hospedado na **Vercel** com deploy automático a cada push na branch `ma
 
 ```
 ZOE/
-├── index.html       # Página principal
+├── index.html       # Página principal (Home)
+├── artigos.html     # Página dedicada de artigos e guias técnicos
 ├── logo.jpg         # Logotipo da marca
 ├── .gitignore       # Arquivos ignorados no versionamento
 └── README.md        # Documentação
