@@ -1,0 +1,36 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+*.DS_Store
+
+# Editor de código
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependências (caso futuramente sejam adicionadas)
+node_modules/
+npm-debug.log*
+yarn-error.log
+yarn-debug.log*
+
+# Variáveis de ambiente - NUNCA commitar arquivos .env com senhas/tokens
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+logs/
+
+# Temporários
+*.tmp
+*.bak
