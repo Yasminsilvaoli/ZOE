@@ -235,65 +235,43 @@
     <!-- Main Content -->
     <main class="main-content flex-1 w-full pt-20 md:pt-0 bg-black">
         
-        <!-- Seção Hero com Animação de Escala Interativa (Quem Somos) -->
-        <section id="hero" class="relative min-h-[100dvh] pt-24 pb-20 px-4 sm:px-6 flex flex-col justify-center items-center overflow-hidden">
+        <!-- Seção Hero Minimalista, Imersiva e com Foco na Foto Real (Quem Somos) -->
+        <section id="hero" class="relative min-h-[100dvh] pt-24 pb-16 px-6 flex flex-col justify-center items-center overflow-hidden">
             
-            <!-- Imagem de Fundo com Escala Interativa (Sem Rotação) -->
-            <div class="absolute inset-0 z-0 flex justify-center items-center overflow-hidden pointer-events-none">
-                <div id="hero-scale-image" class="w-full h-full max-w-6xl max-h-[90vh] mx-auto rounded-3xl overflow-hidden opacity-30 md:opacity-40 transition-transform duration-500 ease-out will-change-transform relative shadow-2xl">
-                    <img src="images/projeto-residencia-luxo.jpg" alt="Projeto Residencial ZOE de Alto Padrão" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/90"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black"></div>
-                </div>
+            <!-- Imagem de Fundo Panorâmica com Efeito de Zoom / Escala Interativo -->
+            <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <img id="hero-scale-image" src="images/hero-panoramica.jpg" alt="Projeto Panorâmico em Vidro e Esquadrias ZOE" class="w-full h-full object-cover transform scale-100 transition-transform duration-700 ease-out will-change-transform opacity-90">
+                <!-- Gradientes suaves de baixa opacidade para máxima nitidez da foto e legibilidade perfeita do texto -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/65"></div>
+                <div class="absolute inset-0 bg-radial-gradient from-transparent via-black/30 to-black/70"></div>
             </div>
 
-            <!-- Card Central Dedicado com Alto Contraste e Hierarquia Visual -->
-            <div class="relative z-10 max-w-2xl w-full mx-auto bg-zinc-950/85 backdrop-blur-xl border border-gold/30 rounded-3xl p-6 sm:p-10 md:p-12 text-center shadow-[0_20px_50px_rgba(0,0,0,0.85)] flex flex-col items-center">
+            <!-- Conteúdo Centralizado Totalmente Limpo (Sem card escuro opaco) -->
+            <div class="relative z-10 max-w-3xl w-full mx-auto text-center flex flex-col items-center my-auto py-8">
                 
-                <!-- Badge de Destaque -->
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs uppercase font-bold tracking-widest mb-6 shadow-sm">
-                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
-                    Excelência em Vidro & Alumínio
-                </div>
-
-                <!-- Título com Espaçamento e Line-Height Otimizados -->
-                <h2 class="text-3xl sm:text-5xl md:text-5xl font-extrabold text-white mb-4 leading-tight tracking-tight">
+                <!-- Título Principal com Destaque Dourado -->
+                <h2 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-white mb-6 leading-[1.15] tracking-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)]">
                     Somos a sua <br><span class="text-gold">melhor escolha</span>
                 </h2>
 
-                <!-- Parágrafo Descritivo sem Sobreposições -->
-                <p class="text-sm sm:text-base text-zinc-300 font-light leading-relaxed max-w-lg mb-8">
+                <!-- Texto Descritivo com Alta Legibilidade e Sombra Leve -->
+                <p class="text-base sm:text-lg md:text-xl text-zinc-100 font-normal leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">
                     Nos comprometemos em entregar os melhores projetos em vidro e alumínio para o seu imóvel, unindo sofisticação, segurança e durabilidade.
                 </p>
                 
-                <!-- Container Dedicado para Dedicação 100% com Fundo e Alto Contraste -->
-                <div class="w-full max-w-md bg-black/80 border border-zinc-800 rounded-2xl p-4 sm:p-5 mb-8 shadow-inner">
-                    <div class="flex justify-between items-center text-xs font-bold uppercase tracking-wider mb-2.5">
-                        <span class="text-zinc-200 flex items-center gap-2">
-                            <svg class="w-4 h-4 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            Compromisso & Dedicação
-                        </span>
-                        <span class="text-gold font-extrabold text-sm">100%</span>
-                    </div>
-                    <div class="w-full bg-zinc-900 rounded-full h-2 border border-gold/25 p-0.5">
-                        <div class="bg-gradient-to-r from-goldDark via-gold to-yellow-200 h-full rounded-full w-full shadow-[0_0_12px_#D4AF37]"></div>
-                    </div>
-                    <p class="text-[11px] text-zinc-400 mt-2 text-left font-light">Projetos sob medida com garantia estrutural e precisão milimétrica.</p>
-                </div>
-
-                <!-- Botão Orçamento Rápido Bem Posicionado com Margem Segura -->
-                <div class="w-full sm:w-auto">
-                    <a href="#contato" class="inline-flex items-center justify-center w-full sm:w-auto bg-gold text-black font-bold py-4 px-10 rounded-full text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_6px_25px_rgba(212,175,55,0.4)] border-2 border-gold active:scale-95 group">
-                        <span>Orçamento Rápido</span>
-                        <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <!-- Botão de Ação (CTA) com Glow Dourado e Posicionamento Preciso -->
+                <div>
+                    <a href="#contato" class="inline-flex items-center justify-center bg-gold text-black font-bold py-4 px-10 rounded-full text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_35px_rgba(212,175,55,0.65)] border-2 border-gold active:scale-95 group">
+                        <span>ORÇAMENTO RÁPIDO</span>
+                        <svg class="w-4 h-4 ml-2.5 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
             
-            <!-- Indicador de Rolagem -->
-            <div class="mt-8 text-gold/80 animate-bounce z-10 flex flex-col items-center">
-                <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-500 mb-1">Role para explorar</span>
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            <!-- Indicador de Rolagem Discreto -->
+            <div class="relative z-10 mt-auto pt-4 text-gold/80 animate-bounce flex flex-col items-center">
+                <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] mb-1">Deslize para ver projetos</span>
+                <svg class="w-5 h-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </div>
         </section>
 
