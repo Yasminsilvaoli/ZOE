@@ -236,42 +236,42 @@
     <main class="main-content flex-1 w-full pt-20 md:pt-0 bg-black">
         
         <!-- Seção Hero Minimalista, Imersiva e com Foco na Foto Real (Quem Somos) -->
-        <section id="hero" class="relative min-h-[100dvh] pt-28 pb-10 sm:pt-24 sm:pb-16 px-5 sm:px-6 flex flex-col justify-center items-center overflow-hidden">
+        <section id="hero" class="relative min-h-[100dvh] pt-20 pb-6 sm:pt-24 sm:pb-16 px-4 sm:px-6 flex flex-col justify-end sm:justify-center items-center overflow-hidden">
             
             <!-- Imagem de Fundo Panorâmica com Efeito de Zoom / Escala Interativo -->
             <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-                <img id="hero-scale-image" src="images/hero-panoramica.jpg" alt="Projeto Panorâmico em Vidro e Esquadrias ZOE" class="w-full h-full object-cover transform scale-100 transition-transform duration-700 ease-out will-change-transform opacity-90">
-                <!-- Gradientes suaves de baixa opacidade para máxima nitidez da foto e legibilidade perfeita do texto -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/65"></div>
-                <div class="absolute inset-0 bg-radial-gradient from-transparent via-black/30 to-black/70"></div>
+                <img id="hero-scale-image" src="images/hero-panoramica.jpg" alt="Projeto Panorâmico em Vidro e Esquadrias ZOE" class="w-full h-full object-cover transform scale-100 transition-transform duration-700 ease-out will-change-transform opacity-95">
+                <!-- Gradientes suaves de baixa opacidade para máxima nitidez da foto e legibilidade perfeita na base -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/45"></div>
+                <div class="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/50"></div>
             </div>
 
-            <!-- Conteúdo Centralizado com Deslocamento Refinado para Mobile (Sem card escuro) -->
-            <div class="relative z-10 max-w-3xl w-full mx-auto text-center flex flex-col items-center mt-auto mb-4 sm:my-auto py-4 sm:py-8">
+            <!-- Conteúdo Posicionado na Base da Imagem no Mobile (Mais para baixo e menor) -->
+            <div class="relative z-10 max-w-3xl w-full mx-auto text-center flex flex-col items-center pb-2 sm:pb-0 sm:my-auto">
                 
-                <!-- Título Principal com Destaque Dourado -->
-                <h2 class="text-3xl sm:text-6xl md:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-[1.18] tracking-tight drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)]">
+                <!-- Título Principal Compacto e Delicado no Mobile -->
+                <h2 class="text-2xl sm:text-6xl md:text-7xl font-extrabold text-white mb-2 sm:mb-6 leading-tight tracking-tight drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]">
                     Somos a sua <br><span class="text-gold">melhor escolha</span>
                 </h2>
 
-                <!-- Texto Descritivo: Proporção Delicada e Elegante Exclusiva no Mobile -->
-                <p class="text-xs sm:text-lg md:text-xl text-zinc-100 font-light leading-snug sm:leading-relaxed max-w-[280px] sm:max-w-2xl mx-auto mb-6 sm:mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] tracking-normal">
+                <!-- Texto Descritivo Mais Compacto e Elegante no Mobile -->
+                <p class="text-[11px] sm:text-lg md:text-xl text-zinc-100 font-light leading-snug sm:leading-relaxed max-w-[250px] sm:max-w-2xl mx-auto mb-4 sm:mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)] tracking-normal">
                     Nos comprometemos em entregar os melhores projetos em vidro e alumínio para o seu imóvel, unindo sofisticação, segurança e durabilidade.
                 </p>
                 
-                <!-- Botão de Ação (CTA): Proporções Otimizadas e Delicadas para Mobile -->
+                <!-- Botão de Ação (CTA) Proporcional e Compacto no Mobile -->
                 <div>
-                    <a href="#contato" class="inline-flex items-center justify-center bg-gold text-black font-bold py-3.5 px-7 sm:py-4 sm:px-10 text-xs sm:text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.6)] sm:shadow-[0_0_35px_rgba(212,175,55,0.65)] border-2 border-gold active:scale-95 group">
+                    <a href="#contato" class="inline-flex items-center justify-center bg-gold text-black font-bold py-2.5 px-6 sm:py-4 sm:px-10 text-[11px] sm:text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_25px_rgba(212,175,55,0.6)] sm:shadow-[0_0_35px_rgba(212,175,55,0.65)] border-2 border-gold active:scale-95 group">
                         <span>ORÇAMENTO RÁPIDO</span>
-                        <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-2 sm:ml-2.5 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        <svg class="w-3 h-3 sm:w-4 sm:h-4 ml-2 sm:ml-2.5 transform group-hover:translate-x-1.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
             </div>
             
             <!-- Indicador de Rolagem Discreto -->
-            <div class="relative z-10 mt-auto pt-2 sm:pt-4 text-gold/80 animate-bounce flex flex-col items-center">
-                <span class="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest text-zinc-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] mb-1">Deslize para ver projetos</span>
-                <svg class="w-4 h-4 sm:w-5 sm:h-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            <div class="relative z-10 pt-2 sm:pt-4 text-gold/80 animate-bounce flex flex-col items-center">
+                <span class="text-[8px] sm:text-[10px] uppercase font-bold tracking-widest text-zinc-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)] mb-0.5">Deslize para ver projetos</span>
+                <svg class="w-3.5 h-3.5 sm:w-5 sm:h-5 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </div>
         </section>
 
