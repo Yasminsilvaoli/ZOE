@@ -472,45 +472,75 @@
                         </div>
                     </div>
 
-                    <!-- Bloco 3: Próxima Transformação (Aguardando Novas Fotos) -->
-                    <div class="bg-zinc-950 border border-gold/30 border-dashed rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col justify-between">
-                        <div class="before-after-box aspect-[3/4] sm:aspect-square w-full rounded-xl overflow-hidden border border-zinc-800 shadow-inner bg-gradient-to-b from-zinc-900 to-black flex flex-col justify-center items-center p-6 text-center">
-                            <div class="w-16 h-16 rounded-full bg-gold/10 border-2 border-gold flex justify-center items-center text-gold mb-4 animate-pulse">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-2">Transformação 03</h4>
-                            <p class="text-xs text-zinc-400 max-w-xs mb-4">Novo projeto de esquadrias e envidraçamento em fase de documentação.</p>
-                            <span class="bg-black text-gold text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-gold/40">
-                                Fotos em Breve
+                    <!-- Bloco 3: Espaço Gourmet & Cortina de Vidro -->
+                    <div class="bg-zinc-950 border border-gold/20 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col justify-between">
+                        <div class="before-after-box aspect-[3/4] sm:aspect-square w-full rounded-xl overflow-hidden border border-zinc-800 shadow-inner relative">
+                            <!-- Imagem ANTES (camada de baixo — fica à direita da linha) -->
+                            <img src="images/antes-area-gourmet.jpg" alt="Antes - Área Gourmet sem fechamento de vidro" class="absolute inset-0 w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-zinc-900/90 text-white border border-zinc-700 text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full pointer-events-none shadow-md z-10">
+                                Antes
                             </span>
+
+                            <!-- Imagem DEPOIS (cortada pela clip-path) -->
+                            <div class="before-after-cut absolute inset-0 z-10">
+                                <img src="images/depois-area-gourmet.jpg" alt="Depois - Área Gourmet com cortina de vidro panorâmica ZOE" class="absolute inset-0 w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 bg-gold text-black border border-gold text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full pointer-events-none shadow-md z-10">
+                                    Depois
+                                </span>
+                            </div>
+
+                            <!-- Linha Divisória Dourada -->
+                            <div class="before-after-line absolute top-0 bottom-0 w-[2.5px] bg-gold shadow-[0_0_12px_#D4AF37] pointer-events-none z-20"></div>
+
+                            <!-- Bolinha Centralizada com Ícone de Arrasto -->
+                            <div class="before-after-handle absolute top-1/2 w-10 h-10 rounded-full bg-gold border-2 border-black text-black flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.95)] pointer-events-none z-30">
+                                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-3 3m0 0l3 3m-3-3h14m-3-3l3 3m0 0l-3 3"></path></svg>
+                            </div>
+
+                            <input type="range" min="0" max="100" value="50" class="before-after-range" aria-label="Comparar Antes e Depois - Espaço Gourmet com Cortina de Vidro">
                         </div>
                         <div class="mt-4 flex justify-between items-center px-1">
                             <div>
-                                <h4 class="text-white font-bold text-base sm:text-lg">Nova Obra Residencial</h4>
-                                <p class="text-xs text-zinc-400 mt-0.5">Aguardando registro fotográfico final</p>
+                                <h4 class="text-white font-bold text-base sm:text-lg">Espaço Gourmet & Cortina de Vidro</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">Fechamento panorâmico com cortina de vidro em área gourmet</p>
                             </div>
-                            <span class="text-zinc-500 text-[11px] font-bold uppercase tracking-wider bg-zinc-900 px-2.5 py-1 rounded-full border border-zinc-800">Em Breve</span>
+                            <span class="text-gold text-[11px] font-bold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-full border border-gold/30">Obra Real</span>
                         </div>
                     </div>
 
-                    <!-- Bloco 4: Próxima Transformação (Aguardando Novas Fotos) -->
-                    <div class="bg-zinc-950 border border-gold/30 border-dashed rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col justify-between">
-                        <div class="before-after-box aspect-[3/4] sm:aspect-square w-full rounded-xl overflow-hidden border border-zinc-800 shadow-inner bg-gradient-to-b from-zinc-900 to-black flex flex-col justify-center items-center p-6 text-center">
-                            <div class="w-16 h-16 rounded-full bg-gold/10 border-2 border-gold flex justify-center items-center text-gold mb-4 animate-pulse">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-2">Transformação 04</h4>
-                            <p class="text-xs text-zinc-400 max-w-xs mb-4">Fechamento e fachada personalizada em processo de finalização.</p>
-                            <span class="bg-black text-gold text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-gold/40">
-                                Fotos em Breve
+                    <!-- Bloco 4: Janela de Correr Esquadria Black -->
+                    <div class="bg-zinc-950 border border-gold/20 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col justify-between">
+                        <div class="before-after-box aspect-[3/4] sm:aspect-square w-full rounded-xl overflow-hidden border border-zinc-800 shadow-inner relative">
+                            <!-- Imagem ANTES (camada de baixo — fica à direita da linha) -->
+                            <img src="images/antes-janela-preta.jpg" alt="Antes - Vão de janela aberto sem esquadria" class="absolute inset-0 w-full h-full object-cover">
+                            <span class="absolute top-3 right-3 bg-zinc-900/90 text-white border border-zinc-700 text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full pointer-events-none shadow-md z-10">
+                                Antes
                             </span>
+
+                            <!-- Imagem DEPOIS (cortada pela clip-path) -->
+                            <div class="before-after-cut absolute inset-0 z-10">
+                                <img src="images/depois-janela-preta.jpg" alt="Depois - Janela com esquadria preta de correr ZOE instalada" class="absolute inset-0 w-full h-full object-cover">
+                                <span class="absolute top-3 left-3 bg-gold text-black border border-gold text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full pointer-events-none shadow-md z-10">
+                                    Depois
+                                </span>
+                            </div>
+
+                            <!-- Linha Divisória Dourada -->
+                            <div class="before-after-line absolute top-0 bottom-0 w-[2.5px] bg-gold shadow-[0_0_12px_#D4AF37] pointer-events-none z-20"></div>
+
+                            <!-- Bolinha Centralizada com Ícone de Arrasto -->
+                            <div class="before-after-handle absolute top-1/2 w-10 h-10 rounded-full bg-gold border-2 border-black text-black flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.95)] pointer-events-none z-30">
+                                <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 9l-3 3m0 0l3 3m-3-3h14m-3-3l3 3m0 0l-3 3"></path></svg>
+                            </div>
+
+                            <input type="range" min="0" max="100" value="50" class="before-after-range" aria-label="Comparar Antes e Depois - Janela de Correr Esquadria Black">
                         </div>
                         <div class="mt-4 flex justify-between items-center px-1">
                             <div>
-                                <h4 class="text-white font-bold text-base sm:text-lg">Projeto Especial ZOE</h4>
-                                <p class="text-xs text-zinc-400 mt-0.5">Aguardando registro fotográfico final</p>
+                                <h4 class="text-white font-bold text-base sm:text-lg">Janela de Correr Esquadria Black</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">Instalação de esquadria preta com vidro fumê de alta performance</p>
                             </div>
-                            <span class="text-zinc-500 text-[11px] font-bold uppercase tracking-wider bg-zinc-900 px-2.5 py-1 rounded-full border border-zinc-800">Em Breve</span>
+                            <span class="text-gold text-[11px] font-bold uppercase tracking-wider bg-gold/10 px-2.5 py-1 rounded-full border border-gold/30">Obra Real</span>
                         </div>
                     </div>
 
